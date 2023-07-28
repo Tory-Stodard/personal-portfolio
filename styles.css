@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    background-color: lightgray;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+#welcome-section {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    padding: 3rem;
+}
+
+#projects h2 {
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-tile {
+    border: 1px solid black;
+}
+
+.project-tile img {
+    width: 100%;
+}
+
+.project-tile p {
+    padding: 1.5rem;
+}
+
+#profile-link {
+    display: block;
+    margin-top: 2rem;
+}
+
+#contact {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 1rem;
+}
