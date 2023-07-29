@@ -22,6 +22,11 @@ html {
     justify-content: flex-end;
     gap: 1.5rem;
     list-style-type: none;
+    font-size: 1.15rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 #welcome-section {
@@ -31,41 +36,60 @@ html {
     align-items: center;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+#welcome-section p {
+    font-size: 1.25rem;
+}
+
 #projects {
-    padding: 3rem;
+    padding: 4rem;
 }
 
 #projects h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
     margin: 0 auto;
 }
 
 .project-tile {
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: lightgray;
 }
 
 .project-tile img {
     width: 100%;
+    height: auto; 
+    object-fit: cover;
+    image-rendering: optimizeQuality;
 }
 
-.project-tile p {
-    padding: 1.5rem;
+.project-tile button {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.75rem 3rem;
 }
 
 #profile-link {
     display: block;
-    margin-top: 2rem;
+    margin-top: 4rem;
+}
+
+#profile-link button {
+    padding: 1rem 4rem;
 }
 
 #contact {
-    height: 500px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +98,11 @@ html {
 
 #contact h2 {
     margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+#contact p {
+    font-size: 1.25rem;
 }
 
 #contact ul {
@@ -82,6 +111,7 @@ html {
     gap: 4rem;
     margin-top: 1rem;
     list-style-type: none;
+    font-size: 1.15rem;
 }
 
 .center-text {
