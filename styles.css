@@ -1,181 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap");
 
 :root {
-    --color1: #023535;
-    --color2: #015958;
-    --color3: #008F8C;
-    --color4: #0CABA8;
-    --color5: #0FC2C0;
-    --main-text-color: whitesmoke;
+  --color1: #023535;
+  --color2: #015958;
+  --color3: #008f8c;
+  --color4: #0caba8;
+  --color5: #0fc2c0;
+  --main-text-color: whitesmoke;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--main-text-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--main-text-color);
 }
 
 #navbar {
-    background: linear-gradient(var(--color4), var(--color5));
-    padding: 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  background: linear-gradient(var(--color4), var(--color5));
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    list-style-type: none;
-    font-size: 1.15rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style-type: none;
+  font-size: 1.15rem;
 }
 
 #navbar a:hover {
-    color: var(--color1);
+  color: var(--color1);
 }
 
 a {
-    text-decoration: none;
-    color: var(--main-text-color);
+  text-decoration: none;
+  color: var(--main-text-color);
 }
 
 #welcome-section {
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(var(--color1), var(--color2));
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--color1), var(--color2));
 }
 
 .hello {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 #welcome-section p {
-    font-size: 1.25rem;
-    color: var(--color5);
+  font-size: 1.25rem;
+  color: var(--color5);
 }
 
 #projects {
-    padding: 4rem;
-    background: linear-gradient(var(--color3), var(--color4));
+  padding: 4rem;
+  background: linear-gradient(var(--color3), var(--color4));
 }
 
 #projects h2 {
-    margin-bottom: 4rem;
-    font-size: 2.25rem;
+  margin-bottom: 4rem;
+  font-size: 2.25rem;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 0 auto;
 }
 
 .project-tile {
-    border-radius: 8px;
-    background-color: var(--color1);
+  border-radius: 8px;
+  background-color: var(--color1);
 }
 
 .project-tile img {
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
-    image-rendering: optimizeQuality;
-    border-radius: 8px 8px 0 0;
-    display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  image-rendering: optimizeQuality;
+  border-radius: 8px 8px 0 0;
+  display: block;
 }
 
-.project-tile button {
-    padding: 0.75rem 3rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: var(--color5);
-    color: var(--main-text-color);
-    border: 1px solid transparent;
-    border-radius: 8px;
-    display: block;
-    margin: 2rem auto;
+.project-tile a {
+  padding: 0.75rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--color5);
+  color: var(--main-text-color);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  width: 30%;
 }
 
-.project-tile button:hover {
-    background-color: var(--color1);
-    border: 1px solid var(--color5);
-    color: var(--main-text-color);
-    cursor: pointer;
+.project-tile a:hover {
+  background-color: var(--color1);
+  border: 1px solid var(--color5);
+  color: var(--main-text-color);
 }
 
 #profile-link {
-    display: block;
-    margin: 4rem auto;
-    margin-bottom: 0;
+  display: block;
+  margin: 4rem auto;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-#profile-link button {
-    padding: 1rem 4rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: var(--color1);
-    color: var(--main-text-color);
-    border: 1px solid transparent;
-    border-radius: 8px;
-}
-
-#profile-link button:hover {
-    border: 1px solid var(--color1);
-    background-color: var(--color4);
-    cursor: pointer;
+#profile-link:hover {
+  color: var(--color1);
 }
 
 #contact {
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-    background: linear-gradient(var(--color1), var(--color2));
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  background: linear-gradient(var(--color1), var(--color2));
 }
 
 #contact h2 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 #contact p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
+  color: var(--color5);
+  margin-bottom: 3rem;
+  font-style: italic;
 }
 
 #contact ul {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
-    list-style-type: none;
-    font-size: 1.15rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+  list-style-type: none;
+  font-size: 1.15rem;
 }
 
 .center-text {
-    text-align: center;
-}
-
-footer {
-    background: linear-gradient(var(--color4), var(--color5));
-    padding: 1rem;
+  text-align: center;
 }
