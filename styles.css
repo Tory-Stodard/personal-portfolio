@@ -63,10 +63,12 @@ a {
 .hello {
   font-family: "Great Vibes", cursive;
   font-size: 4rem;
+  animation: hello 5s infinite;
 }
 
 h1 {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 #welcome-section p {
@@ -168,4 +170,10 @@ h1 {
 
 .center-text {
   text-align: center;
+}
+
+@keyframes hello {
+  50% {
+    color: var(--color5);
+  }
 }
