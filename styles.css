@@ -118,7 +118,7 @@ h1 {
   display: block;
   margin: 2rem auto;
   text-align: center;
-  width: 30%;
+  width: 250px;
 }
 
 .project-tile a:hover {
@@ -175,5 +175,53 @@ h1 {
 @keyframes hello {
   50% {
     color: var(--color5);
+  }
+}
+
+@media (max-width: 1000px) {
+  #navbar ul {
+    justify-content: center;
+  }
+
+  #welcome-section {
+    width: 100dvw;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  #contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact li {
+    width: 90px;
+  }
+
+  .project-tile a {
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    margin: 1rem auto;
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar ul,
+  #contact p,
+  #profile-link {
+    font-size: 1rem;
+  }
+
+  h1,
+  #projects h2,
+  #contact h2 {
+    font-size: 1.5rem;
   }
 }
